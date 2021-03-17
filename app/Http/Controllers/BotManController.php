@@ -14,15 +14,15 @@ class BotManController extends Controller
     {
         $botman = app('botman');
 
-        // $botman->hears('{message}', function($botman, $message) {
+        $botman->hears('{message}', function($botman, $message) {
 
-        //     if ($message == 'compare') {
-        //         $this->startConversation($botman);
-        //     }else{
-        //         $botman->reply("write 'compare' to start...");
-        //     }
+            if ($message == 'compare') {
+                $this->startConversation($botman);
+            }else{
+                $botman->reply("write 'compare' to start...");
+            }
 
-        // });
+        });
 
         $botman->listen();
     }
