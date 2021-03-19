@@ -19,7 +19,7 @@ class BotManController extends Controller
             if ($message == 'compare') {
                 $this->startConversation($botman);
             }else{
-                $botman->reply("Wrong entry keyword please. Write 'compare' keyword to start...");
+                $botman->reply("Sorry, I did not understand your keyword. Please write 'compare' keyword to start...");
             }
 
         });

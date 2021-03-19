@@ -27,7 +27,7 @@ class OnboardingConversation extends Conversation
                 ]);
 
                 $this->say('Continue!');
-               $this->askName();
+                $this->askName();
             }
         });
     }
