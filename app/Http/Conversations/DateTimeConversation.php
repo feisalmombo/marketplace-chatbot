@@ -67,7 +67,6 @@ class DateTimeConversation extends Conversation
             ]);
 
             $this->say('Thank you!');
-            // $this->say('Thank you '.$answer->getText());
             $this->bot->startConversation(new BookingConversation());
 
         });
