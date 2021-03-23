@@ -100,7 +100,6 @@ class DateTimeConversation extends Conversation
      */
     public function run()
     {
-        // $this->askDate();
         $this->askLoanPurpose(); 
     }
 }

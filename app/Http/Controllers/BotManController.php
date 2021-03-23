@@ -17,7 +17,6 @@ class BotManController extends Controller
         $botman->hears('{message}', function($botman, $message) {
 
             if ($message == 'compare') {
-                // $this->startConversation($botman);
             }else{
                 $botman->reply("Sorry, I did not understand your keyword. Please write 'compare' keyword to start...");
             }

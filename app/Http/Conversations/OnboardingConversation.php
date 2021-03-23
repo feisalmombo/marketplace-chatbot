@@ -66,14 +66,6 @@ class OnboardingConversation extends Conversation
     public function askMobile()
     {
         $this->ask('Great. Please enter your phone number?', function (Answer $answer) {
-            // $validator = Validator::make(['mobile' => $answer->getText()], [
-            //     'mobile' => 'mobile',
-            // ]);
-
-            // if ($validator->fails()) {
-            //     return $this->repeat('That doesn\'t look like a valid Phone number with 10 characters. Please enter a valid phone number.');
-            // }
-
             $this->bot->userStorage()->save([
                 'mobile' => $answer->getText(),
             ]);
