@@ -67,8 +67,29 @@ class DateTimeConversation extends Conversation
             ]);
 
             $this->say('Thank you!');
-            $this->bot->startConversation(new BookingConversation());
+            $this->askTermsConditions();
 
+        });
+    }
+
+    public function askTermsConditions()
+    {
+        $question = Question::create('Please agree to our terms and conditions.?')
+            ->callbackId('select_service')
+            ->addButtons([
+                Button::create('Yes')->value('Yes'),
+                Button::create('No')->value('No'),
+            ]);
+
+        $this->ask($question, function (Answer $answer) {
+            if ($answer->isInteractiveMessageReply()) {
+                $this->bot->userStorage()->save([
+                    'conditions' => $answer->getValue(),
+                ]);
+
+                $this->say('Continue!');
+                $this->bot->startConversation(new BookingConversation());
+            }
         });
     }
 
