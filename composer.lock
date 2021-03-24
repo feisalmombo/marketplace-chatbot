@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e640c77bc5e648168f2520e7f7b55bc1",
+    "content-hash": "8a5deed27a77e51c25f40707bbf4bd56",
     "packages": [
         {
             "name": "botman/botman",
@@ -202,6 +202,63 @@
                 "facebook messenger"
             ],
             "time": "2020-09-11T02:02:54+00:00"
+        },
+        {
+            "name": "botman/driver-nexmo",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/botman/driver-nexmo.git",
+                "reference": "94f1d3af37b799031408d8697d1097de14f62fb1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/botman/driver-nexmo/zipball/94f1d3af37b799031408d8697d1097de14f62fb1",
+                "reference": "94f1d3af37b799031408d8697d1097de14f62fb1",
+                "shasum": ""
+            },
+            "require": {
+                "botman/botman": "~2.0",
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "botman/studio-addons": "~1.0",
+                "ext-curl": "*",
+                "illuminate/contracts": "~5.5.0",
+                "mockery/mockery": "dev-master",
+                "phpunit/phpunit": "~5.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "BotMan\\Drivers\\Nexmo\\Providers\\NexmoServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "BotMan\\Drivers\\Nexmo\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marcel Pociot",
+                    "email": "m.pociot@gmail.com"
+                }
+            ],
+            "description": "Nexmo driver for BotMan",
+            "homepage": "http://github.com/botman/driver-nexmo",
+            "keywords": [
+                "Botman",
+                "bot",
+                "nexmo"
+            ],
+            "time": "2018-01-21T20:42:03+00:00"
         },
         {
             "name": "botman/driver-slack",
