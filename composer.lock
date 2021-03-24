@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ec0b20aba577a2ca82b96299cf26ae3b",
+    "content-hash": "f1a4660520b557bed105f405e0ed0ead",
     "packages": [
         {
             "name": "botman/botman",
@@ -551,6 +551,63 @@
                 "web"
             ],
             "time": "2018-03-27T10:19:41+00:00"
+        },
+        {
+            "name": "botman/driver-wechat",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/botman/driver-wechat.git",
+                "reference": "8b621f2fc4b79f556fa936a78acf247307c040a2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/botman/driver-wechat/zipball/8b621f2fc4b79f556fa936a78acf247307c040a2",
+                "reference": "8b621f2fc4b79f556fa936a78acf247307c040a2",
+                "shasum": ""
+            },
+            "require": {
+                "botman/botman": "~2.0",
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "botman/studio-addons": "~1.0",
+                "ext-curl": "*",
+                "illuminate/contracts": "~5.5.0",
+                "mockery/mockery": "dev-master",
+                "phpunit/phpunit": "~5.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "BotMan\\Drivers\\WeChat\\Providers\\WeChatServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "BotMan\\Drivers\\WeChat\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marcel Pociot",
+                    "email": "m.pociot@gmail.com"
+                }
+            ],
+            "description": "WeChat driver for BotMan",
+            "homepage": "http://github.com/botman/driver-wechat",
+            "keywords": [
+                "Botman",
+                "bot",
+                "wechat"
+            ],
+            "time": "2018-01-21T21:04:08+00:00"
         },
         {
             "name": "botman/studio-addons",
