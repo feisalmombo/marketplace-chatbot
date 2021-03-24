@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8a5deed27a77e51c25f40707bbf4bd56",
+    "content-hash": "2909e8ebebff9d8606b210d6c2a269c7",
     "packages": [
         {
             "name": "botman/botman",
@@ -202,6 +202,63 @@
                 "facebook messenger"
             ],
             "time": "2020-09-11T02:02:54+00:00"
+        },
+        {
+            "name": "botman/driver-hipchat",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/botman/driver-hipchat.git",
+                "reference": "6d7cb3f402df6d4174f7dc95f4b8a637239c07d3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/botman/driver-hipchat/zipball/6d7cb3f402df6d4174f7dc95f4b8a637239c07d3",
+                "reference": "6d7cb3f402df6d4174f7dc95f4b8a637239c07d3",
+                "shasum": ""
+            },
+            "require": {
+                "botman/botman": "~2.0",
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "botman/studio-addons": "~1.0",
+                "ext-curl": "*",
+                "illuminate/contracts": "~5.5.0",
+                "mockery/mockery": "dev-master",
+                "phpunit/phpunit": "~5.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "BotMan\\Drivers\\HipChat\\Providers\\HipChatServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "BotMan\\Drivers\\HipChat\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marcel Pociot",
+                    "email": "m.pociot@gmail.com"
+                }
+            ],
+            "description": "HipChat driver for BotMan",
+            "homepage": "http://github.com/botman/driver-hipchat",
+            "keywords": [
+                "Botman",
+                "bot",
+                "hipchat"
+            ],
+            "time": "2018-02-20T13:05:20+00:00"
         },
         {
             "name": "botman/driver-nexmo",

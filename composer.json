@@ -14,6 +14,7 @@
         "botman/botman": "~2.0",
         "botman/driver-botframework": "^1.1",
         "botman/driver-facebook": "^1.11",
+        "botman/driver-hipchat": "^1.1",
         "botman/driver-nexmo": "^1.1",
         "botman/driver-slack": "^2.2",
         "botman/driver-telegram": "^1.6",
