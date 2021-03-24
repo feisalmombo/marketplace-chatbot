@@ -18,6 +18,7 @@
         "botman/driver-nexmo": "^1.1",
         "botman/driver-slack": "^2.2",
         "botman/driver-telegram": "^1.6",
+        "botman/driver-twilio": "^1.2",
         "botman/driver-web": "^1.5",
         "botman/studio-addons": "~1.2.1",
         "botman/tinker": "~1.0",
