@@ -88,7 +88,7 @@ class DateTimeConversation extends Conversation
                 ]);
 
                 $this->say('Continue!');
-                $this->bot->startConversation(new BookingConversation());
+                // $this->bot->startConversation(new BookingConversation());
             }
         });
     }

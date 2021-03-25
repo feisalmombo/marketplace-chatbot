@@ -17,7 +17,7 @@ class OnboardingConversation extends Conversation
             ->callbackId('select_service')
             ->addButtons([
                 Button::create('English')->value('English'),
-                Button::create('Swahili')->value('Swahili'),
+                // Button::create('Swahili')->value('Swahili'),
             ]);
 
         $this->ask($question, function (Answer $answer) {
