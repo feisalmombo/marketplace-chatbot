@@ -8,7 +8,7 @@ use BotMan\BotMan\Messages\Outgoing\Question;
 use BotMan\BotMan\Messages\Outgoing\Actions\Button;
 use BotMan\BotMan\Messages\Conversations\Conversation;
 
-class DateTimeConversation extends Conversation
+class LoanConversation extends Conversation
 {
     public function askLoanPurpose()
     {
@@ -88,7 +88,7 @@ class DateTimeConversation extends Conversation
                 ]);
 
                 $this->say('Continue!');
-                // $this->bot->startConversation(new BookingConversation());
+                // $this->bot->startConversation(new ResultsConversation());
             }
         });
     }

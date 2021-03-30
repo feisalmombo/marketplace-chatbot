@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use BotMan\BotMan\BotMan;
-use App\Http\Conversations\OnboardingConversation;
+use App\Http\Conversations\LanguageConversation;
 
 class BotManController extends Controller
 {
@@ -41,6 +41,6 @@ class BotManController extends Controller
      */
     public function startConversation(BotMan $bot)
     {
-        $bot->startConversation(new OnboardingConversation());
+        $bot->startConversation(new LanguageConversation());
     }
 }

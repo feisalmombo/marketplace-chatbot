@@ -4,7 +4,7 @@ namespace App\Http\Conversations;
 
 use BotMan\BotMan\Messages\Conversations\Conversation;
 
-class BookingConversation extends Conversation
+class ResultsConversation extends Conversation
 {
     public function confirmBooking()
     {

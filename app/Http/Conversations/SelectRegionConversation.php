@@ -7,7 +7,7 @@ use BotMan\BotMan\Messages\Outgoing\Question;
 use BotMan\BotMan\Messages\Outgoing\Actions\Button;
 use BotMan\BotMan\Messages\Conversations\Conversation;
 
-class SelectServiceConversation extends Conversation
+class SelectRegionConversation extends Conversation  
 {
     public function askService()
     {
@@ -28,7 +28,7 @@ class SelectServiceConversation extends Conversation
                     'region' => $answer->getValue(),
                 ]);
 
-                $this->bot->startConversation(new DateTimeConversation());
+                $this->bot->startConversation(new LoanConversation());
             }
         });
     }

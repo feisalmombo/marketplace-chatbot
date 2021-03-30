@@ -9,7 +9,7 @@ use BotMan\BotMan\Messages\Conversations\Conversation;
 use BotMan\BotMan\Messages\Outgoing\Question;
 use BotMan\BotMan\Messages\Outgoing\Actions\Button;
 
-class OnboardingConversation extends Conversation
+class LanguageConversation extends Conversation
 {
     public function askLanguage()
     {
@@ -72,7 +72,7 @@ class OnboardingConversation extends Conversation
 
             $this->say('Great!');
 
-            $this->bot->startConversation(new SelectServiceConversation());
+            $this->bot->startConversation(new SelectRegionConversation());
         });
     }
 
