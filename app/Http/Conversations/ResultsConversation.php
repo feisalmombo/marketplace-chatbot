@@ -17,8 +17,14 @@ class ResultsConversation extends Conversation
         $message .= 'Region : '.$user->get('region').'<br>';
         $message .= 'Loan purpose : '.$user->get('purpose').'<br>';
         $message .= 'Loan amount : '.$user->get('amount').'<br>';
-        $message .= 'Loan period : '.$user->get('period').'<br>';
         $message .= 'Net Salary : '.$user->get('salary').'<br>';
+        $message .= 'Interest rate : '."20%".'<br>';
+        $message .= 'Facility Fee : '."7500".'<br>';
+        $message .= 'Monthly Payment : '."88261".'<br>';
+        $message .= 'Insurance Fee : '."1875".'<br>';
+        $message .= 'Tenure : '.$user->get('period').'<br>';
+        $message .= 'Debt Burden Ratio : '."12.61%".'<br>';
+        $message .= 'Net Amount : '."490625".'<br>';
         $message .= '------------------------------------------------';
 
         $this->say('Great. Here is your final details. <br><br>'.$message);

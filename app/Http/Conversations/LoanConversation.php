@@ -88,7 +88,7 @@ class LoanConversation extends Conversation
                 ]);
 
                 $this->say('Continue!');
-                // $this->bot->startConversation(new ResultsConversation());
+                $this->bot->startConversation(new ResultsConversation());
             }
         });
     }
@@ -100,6 +100,6 @@ class LoanConversation extends Conversation
      */
     public function run()
     {
-        $this->askLoanPurpose(); 
+        $this->askLoanPurpose();
     }
 }
