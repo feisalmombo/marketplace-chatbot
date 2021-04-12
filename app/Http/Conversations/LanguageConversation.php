@@ -34,7 +34,7 @@ class LanguageConversation extends Conversation
 
     public function askName()
     {
-        $this->ask('Please enter your name?', function (Answer $answer) {
+        $this->ask('Please enter your full name?', function (Answer $answer) {
             $this->bot->userStorage()->save([
                 'name' => $answer->getText(),
             ]);
@@ -65,7 +65,7 @@ class LanguageConversation extends Conversation
 
     public function askMobile()
     {
-        $this->ask('Great. Please enter your phone number?', function (Answer $answer) {
+        $this->ask('Great. Please enter your valid phone number?', function (Answer $answer) {
             $this->bot->userStorage()->save([
                 'mobile' => $answer->getText(),
             ]);
