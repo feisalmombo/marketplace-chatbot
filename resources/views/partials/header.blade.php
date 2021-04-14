@@ -63,7 +63,7 @@
         <!-- mini logo for sidebar mini 50x50 pixels -->
         <span class="logo-mini"><strong style="color:#2B3483">MarketPlace Chatbot</strong><strong style="color:#E58225">.</strong></span>
         <!-- logo for regular state and mobile devices -->
-        <span class="logo-lg"><strong style="color:#2B3483">MarketPlace Chatbot</strong><strong style="color:#E58225">.</strong></span>
+        <span class="logo-lg"><strong style="color:#2B3483">MarketPlace Bot</strong><strong style="color:#E58225">.</strong></span>
       </a>
 
 
