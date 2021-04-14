@@ -25,7 +25,7 @@
             </a>
             <ul class="treeview-menu">
                 <li><a href="{{ url('/view/all/users') }}"><i class="fa fa-users"></i> All Users</a></li>
-                @if(Auth::user()->hasRole('developer') || Auth::user()->hasRole('administrator'))    
+                @if(Auth::user()->hasRole('developer') || Auth::user()->hasRole('administrator'))
                 <li><a href="{{ url('/view-users/create') }}"><i class="fa fa-plus"></i> Add User</a></li>
                 @endif
             </ul>
@@ -79,51 +79,6 @@
             </ul>
     </li>
     @endif
-
-    {{-- @if(Auth::user()->hasRole('tech') || Auth::user()->hasRole('teacher'))
-    <li class="treeview">
-        <a href="#">
-            <i class="fa fa-universal-access"></i> <span>Manage Permissions</span>
-            <span class="pull-right-container">
-            <i class="fa fa-angle-left pull-right"></i>
-            </span>
-        </a>
-
-        <ul class="treeview-menu">
-            <li>
-            <a href="{{ url('/settings/manage_users/permissions') }}"><i class="fa fa-circle-o"></i> View Permission</a>
-            </li>
-
-            <li>
-            <a href="{{ url('/settings/manage_users/permissions/entrust_role') }}"><i class="fa fa-circle-o"></i> Assign Permissions to Role</a>
-            </li>
-
-            <li>
-            <a href="{{ url('/settings/manage_users/permissions/entrust_user') }}"><i class="fa fa-circle-o"></i> Entrust Permission to User</a>
-            </li>
-        </ul>
-    </li>
-    @endif --}}
-
-    {{-- @if(Auth::user()->hasRole('tech') || Auth::user()->hasRole('teacher'))
-    <li class="treeview">
-        <a href="#">
-            <i class="fa fa-times"></i> <span>Manage Roles</span>
-            <span class="pull-right-container">
-            <i class="fa fa-angle-left pull-right"></i>
-            </span>
-        </a>
-        <ul class="treeview-menu">
-            <li>
-            <a href="{{ url('/settings/manage_users/roles') }}"><i class="fa fa-circle-o"></i> View Roles</a>
-            </li>
-
-            <li>
-            <a href="{{ url('/settings/manage_users/roles/create') }}"><i class="fa fa-circle-o"></i> Entrust Role to User</a>
-            </li>
-        </ul>
-    </li>
-    @endif --}}
 
     @if(Auth::user()->hasRole('developer') || Auth::user()->hasRole('staff') || Auth::user()->hasRole('administrator') || Auth::user()->hasRole('manager'))
     <li class="treeview">
