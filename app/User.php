@@ -2,12 +2,17 @@
 
 namespace App;
 
+
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use App\Permissions\HasPermissionsTrait;
+use App\Role;
+use App\Permission;
 
 class User extends Authenticatable
 {
     use Notifiable;
+    use HasPermissionsTrait;
 
     /**
      * The attributes that are mass assignable.
@@ -15,7 +20,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'full_name', 'email', 'phone_number', 'password', 'role',
     ];
 
     /**
@@ -26,4 +31,9 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function status()
+    {
+        return $this->belongsTo('App\UserStatus');
+    }
 }
