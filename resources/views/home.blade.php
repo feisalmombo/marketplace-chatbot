@@ -7,7 +7,7 @@
 @if(Auth::user()->hasRole('developer') || Auth::user()->hasRole('staff') || Auth::user()->hasRole('administrator') || Auth::user()->hasRole('manager'))
 <section class="content-header">
     <h1 style="font-family:Titillium Web, sans-serif">
-    Welcome To MarketPlace Blog Dashboard
+    Welcome To MarketPlace Chatbot Dashboard
   </h1>
 </section>
 @endif

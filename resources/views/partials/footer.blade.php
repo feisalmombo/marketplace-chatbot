@@ -3,7 +3,7 @@
       <b>Version</b> 2.0.0
     </div>
     <strong>
-        &copy; {{date('Y')}} MarketPlace Blog All Rights Reserved. <a href="https://getpesa.co.tz/" target="_blank"><strong style="color:#EE4323;">A Product by GetPesa</strong></a>
+        &copy; {{date('Y')}} MarketPlace Chatbot All Rights Reserved. <a href="https://getpesa.co.tz/" target="_blank"><strong style="color:#EE4323;">A Product by GetPesa</strong></a>
     </strong>
 </footer>
 

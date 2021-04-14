@@ -5,12 +5,12 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <meta name="description" content="MarketPlace Blog">
-  <meta name="keywords" content="MarketPlace Blog"/>
-  <meta name="author" content="MarketPlace Blog">
+  <meta name="description" content="MarketPlace Chatbot">
+  <meta name="keywords" content="MarketPlace Chatbot"/>
+  <meta name="author" content="MarketPlace Chatbot">
   <meta name="csrf-token" content="{{ csrf_token() }}">
 
-  <title>{{config('app.name', 'MarketPlace Blog') }} | @yield('title')</title>
+  <title>{{config('app.name', 'MarketPlace Chatbot') }} | @yield('title')</title>
 
   <!-- Favicon icon -->
   <link rel="icon" type="image/png" sizes="16x16" href="{{asset('temp/images/favicon.png')}}">
@@ -61,9 +61,9 @@
       <!-- Logo -->
       <a href="{{ url('/') }}" class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
-        <span class="logo-mini"><strong style="color:#2B3483">MarketPlace Blog</strong><strong style="color:#E58225">.</strong></span>
+        <span class="logo-mini"><strong style="color:#2B3483">MarketPlace Chatbot</strong><strong style="color:#E58225">.</strong></span>
         <!-- logo for regular state and mobile devices -->
-        <span class="logo-lg"><strong style="color:#2B3483">MarketPlace Blog</strong><strong style="color:#E58225">.</strong></span>
+        <span class="logo-lg"><strong style="color:#2B3483">MarketPlace Chatbot</strong><strong style="color:#E58225">.</strong></span>
       </a>
 
 
